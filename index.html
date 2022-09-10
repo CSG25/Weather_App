@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whetaer App</title>
+  <link rel="icon" href=https://cdn-icons-png.flaticon.com/128/2862/2862807.png>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <div class="holder" id="holder">
+
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search City.." >
+        <button class="search-button">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+      
+      <div class="time" id="time">12:30</div>
+      <h1 class="date" id="data">data</h1>
+      <h1 class="city">Cluj-Napoca</h1>
+
+      <div class="info">
+        <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="" class="icon">
+      </div>
+
+      <h1 class="current-temp"> 16 °</h1>
+
+      <div class="temps">
+        <div class="min-temp"> 6 °</div>
+        <div class="max-temp"> 22 °</div>
+      </div>
+        
+      <div class="description">Cloudy</div>
+
+      <hr class="line"/>
+
+      <div class="card">
+        <div class="day">
+          <h3 class="day1" id="day1">Mon</h3>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon1">
+          <div class="min-max">
+            <p class="temp1" id="day1Min">22°</p>
+            
+          </div>
+        </div>
+
+        <div class="day">
+          <h3 class="day2" id="day2">Mon</h3>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon2">
+          <div class="min-max">
+            <p class="temp2" id="day2Min">22°</p>
+            
+          </div>
+        </div>
+
+        <div class="day">
+          <h3 class="day3" id="day3">Mon</h3>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon3">
+          <div class="min-max">
+            <p class="temp3" id="day3Min">22°</p>
+            
+          </div>
+        </div>
+
+        <div class="day">
+          <h3 class="day4" id="day4">Mon</h3>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon4">
+          <div class="min-max">
+            <p class="temp4" id="day4Min">22°</p>
+            
+          </div>
+        </div>
+
+        <div class="day">
+          <h3 class="day5" id="day5">Mon</h3>
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon5">
+          <div class="min-max">
+            <p class="temp5" id="day5Min">22°</p>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
