@@ -57,7 +57,7 @@ let weather = {
     document.querySelector(".description").innerText = description[0].toUpperCase() + description.slice(1);
     document.querySelector(".time").innerText = time;
     document.querySelector(".date").innerText = date;
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/1920x1000/?" + name + "')"
+    document.body.style.backgroundImage = "url('https://source.unsplash.com/2800x2000/?" + name + "')"
 
    
 
@@ -107,25 +107,6 @@ async function latLon(city) {
 
 
    function displayNextDays (data)  {
-    
-    
-    document.querySelector('.temp1').innerText= Math.round(data.list[7].main.temp) + "°C";
-    document.querySelector('.temp2').innerText= Math.round(data.list[14].main.temp) + "°C";
-    document.querySelector('.temp3').innerText= Math.round(data.list[22].main.temp) + "°C";
-    document.querySelector('.temp4').innerText= Math.round(data.list[30].main.temp) + "°C";
-    document.querySelector('.temp5').innerText= Math.round(data.list[38].main.temp) + "°C";
-    document.querySelector('.icon1').src= "https://openweathermap.org/img/wn/" + data.list[7].weather[0].icon + ".png";
-    document.querySelector('.icon2').src= "https://openweathermap.org/img/wn/" + data.list[14].weather[0].icon + ".png";
-    document.querySelector('.icon3').src= "https://openweathermap.org/img/wn/" + data.list[22].weather[0].icon + ".png";
-    document.querySelector('.icon4').src= "https://openweathermap.org/img/wn/" + data.list[30].weather[0].icon + ".png";
-    document.querySelector('.icon5').src= "https://openweathermap.org/img/wn/" + data.list[38].weather[0].icon + ".png";
-    document.querySelector('.day1').innerHTML=  date(7);
-    document.querySelector('.day2').innerText=  date(15);
-    document.querySelector('.day3').innerText=  date(22);
-    document.querySelector('.day4').innerText=  date(30);
-    document.querySelector('.day5').innerText=  date(38);
-
-    
     function date(number) {
 
       const {dt} = data.list[number]  ;
@@ -149,6 +130,25 @@ async function latLon(city) {
       const res=  (date);
       return(res);
     };
+    
+    document.querySelector('.temp1').innerText= Math.round(data.list[7].main.temp) + "°C";
+    document.querySelector('.temp2').innerText= Math.round(data.list[14].main.temp) + "°C";
+    document.querySelector('.temp3').innerText= Math.round(data.list[22].main.temp) + "°C";
+    document.querySelector('.temp4').innerText= Math.round(data.list[30].main.temp) + "°C";
+    document.querySelector('.temp5').innerText= Math.round(data.list[38].main.temp) + "°C";
+    document.querySelector('.icon1').src= "https://openweathermap.org/img/wn/" + data.list[7].weather[0].icon + ".png";
+    document.querySelector('.icon2').src= "https://openweathermap.org/img/wn/" + data.list[14].weather[0].icon + ".png";
+    document.querySelector('.icon3').src= "https://openweathermap.org/img/wn/" + data.list[22].weather[0].icon + ".png";
+    document.querySelector('.icon4').src= "https://openweathermap.org/img/wn/" + data.list[30].weather[0].icon + ".png";
+    document.querySelector('.icon5').src= "https://openweathermap.org/img/wn/" + data.list[38].weather[0].icon + ".png";
+    document.querySelector('.day1').innerHTML=  date(7);
+    document.querySelector('.day2').innerText=  date(15);
+    document.querySelector('.day3').innerText=  date(22);
+    document.querySelector('.day4').innerText=  date(30);
+    document.querySelector('.day5').innerText=  date(38);
+
+    
+   
   }; 
 
 
