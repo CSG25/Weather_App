@@ -93,7 +93,7 @@ async function latLon(city) {
   const latLong = await latLong1;
   const {lat,lon} = latLong.data.coord;
 
-  fetch ('http://api.openweathermap.org/data/2.5/forecast?id=524901&appid='
+  fetch ('https://api.openweathermap.org/data/2.5/forecast?id=524901&appid='
   + apiKey 
   +'&lat=' + lat 
   + '&lon=' + lon 
