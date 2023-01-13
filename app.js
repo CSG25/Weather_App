@@ -57,7 +57,7 @@ let weather = {
     document.querySelector(".description").innerText = description[0].toUpperCase() + description.slice(1);
     document.querySelector(".time").innerText = time;
     document.querySelector(".date").innerText = date;
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/2800x2000/?" + name + "')"
+    document.body.style.backgroundImage = "url(https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=1500)"
 
    
 
